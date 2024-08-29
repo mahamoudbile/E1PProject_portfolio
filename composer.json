@@ -1,0 +1,15 @@
+{
+    "name": "maham/e1p-project",
+    "autoload": {
+        "psr-4": {
+            "Maham\\E1pProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mahamoudbile",
+            "email": "mahamoudbileciise@hotmail.com"
+        }
+    ],
+    "require": {}
+}
