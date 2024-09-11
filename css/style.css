@@ -1,0 +1,269 @@
+
+/*{
+    background-color: #36463C;
+}
+*/
+
+
+/*
+.site-header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*/ 
+/*----------------------------------------------------header/navi-----------------------------------*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.site_header{
+    background-color: #333;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    
+}
+
+.main_logo h1 span{
+    color: #DAA520;
+    font-weight: bold;
+}
+
+.nav-links{
+    padding: 0;
+    list-style: none;
+    /* display: flex;
+    gap: 1rem; */
+}
+.nav-links li{
+    display: inline-block;
+}
+.nav-links li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+/*----------------------------------------------------banner-----------------------------------*/
+
+/* .banner{
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #FFFFFF;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+}
+
+.banner-content h2 span{
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: #DAA520;
+}
+
+.banner-content p{
+    margin: 5px;
+    font-size: 1.2em;
+} */
+
+
+.banner-content h2 span{
+    margin: 0.5em 0;
+    color: #DAA520;
+    font-size: 2.5em;
+}
+
+.banner-content h2{
+    font-size: 2em;
+}
+
+.banner-content p{
+    background-color: #d8b355;
+    font-size: 2em;
+    color: #1a1a1a;
+    border: 2px;
+    border-radius: 25px;
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contact-info{
+    background-color: #d8b355;
+    font-size: 2em;
+    color: #1a1a1a;
+    border: 2px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1%;
+}
+
+.general_info, .banner-content {
+    flex: 1;
+    padding: 1%;
+}
+
+.general_info {
+    text-align: left; 
+}
+
+.banner-content {
+    text-align: left;
+}
+
+
+.img_banner {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    overflow: hidden;  
+}
+
+.img_banner img {
+    max-width: 30%;  
+    height: auto;  
+    object-fit: contain;
+}
+
+.img_banner {
+    position: relative;
+    overflow: hidden;
+    width: 60%; /* of een andere passende breedte */
+}
+
+.img_banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.star-icon {
+    position: absolute;
+    z-index: 2; /* Zorgt dat het boven de overlay staat */
+    color: #ffd700; /* Gouden kleur voor de sterren */
+    font-size: 24px; /* Grootte van de sterren */
+}
+
+.star-icon.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.star-icon.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.star-icon.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.star-icon.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.img_banner img {
+    filter: grayscale(50%);
+}
+
+.img_banner img {
+    filter: sepia(60%) blur(5px);
+}
+
+.img_banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.img_banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Donkere overlay */
+    z-index: 1;
+}
+
+.img_banner img {
+    display: block;
+    width: 60%;
+    height: auto;
+    z-index: 0;
+}
+
+
+.subtitle::before, .tagline::before {
+    content: "\f00c";  /* FontAwesome code voor 'check' icoon */
+    font-family: "FontAwesome";
+    color: #4CAF50;  /* Groene kleur voor het check icoon */
+    margin-right: 5px;
+}
+.banner {
+    background-image: url('/pad/naar/je/achtergrond.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: backgroundScroll 30s linear infinite;
+}
+
+@keyframes backgroundScroll {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #00CED1;
+    text-align: center;
+}
+
+.container {
+    padding-bottom: 60px;
+}
+
